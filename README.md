@@ -21,10 +21,13 @@ This repository contains a deep learning solution for classifying 28x28 grayscal
 - `candidate_dataset.npz`: Training and validation data arrays.
 
 ## 🛠️ Live Inference (Evaluation)
-Run the following to evaluate on the hidden examiner dataset:
+1. **Download Model Weights:** [best_model.pth].(https://drive.google.com/drive/folders/114bFLUBe_g5gJ2wtv0ILO_TTz0GDUCy_?usp=sharing)
+2. **Setup:** Ensure `best_model.pth` and your script are in the same directory.
+3. **Execution:** Run the following to evaluate on the hidden examiner dataset:
 
 ```python
 # Short-form usage for live testing
 from your_script import run_live_inference
 
+# Path to the .npz file provided by the examiner
 acc = run_live_inference('examiner_file.npz')
