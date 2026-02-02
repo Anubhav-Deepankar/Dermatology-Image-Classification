@@ -20,11 +20,11 @@ This repository contains a deep learning solution for classifying 28x28 grayscal
 - `best_model.pth`: Saved weights of the best-performing model.
 - `candidate_dataset.npz`: Training and validation data arrays.
 
-## 🛠️ Usage (Live Inference)
-To run the model on a new hidden dataset (`.npz` format):
-```python
-from your_script import evaluate_hidden_dataset
+## 🛠️ Live Inference (Evaluation)
+Run the following to evaluate on the hidden examiner dataset:
 
-# Provide path to the hidden dataset
-accuracy = evaluate_hidden_dataset('path_to_test_file.npz')
-print(f"Final Accuracy: {accuracy * 100:.2f}%")
+```python
+# Short-form usage for live testing
+from your_script import run_live_inference
+
+acc = run_live_inference('examiner_file.npz')
